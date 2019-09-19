@@ -9,6 +9,12 @@
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
     <script type="text/javascript" src="js/main.js"></script>
+    <!-- Ska få denna funktion att fungera sen -->
+    <script>
+            function ChangeP() {
+              document.getElementsById("testp").innerHTML = "Paragraph changed.";
+            }
+            </script>
 </head>
 
 <body>
@@ -16,7 +22,9 @@
         <ul>
             <li>Site Name</li>
             <!-- <li><a href="#page-2">Page 2</a></li> -->
-        </ul>
+        <!-- </ul>
+           <img class="settings" src="css/img/settings.png" alt="settings">
+        </ul> -->
     </header>
     <main>
             <ul class="nav">
@@ -26,7 +34,8 @@
                 </ul>
         <section class="page-2" id="page-1">
             <h1>Page #1</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            <button type="button" onclick="ChangeP()">Change paragraph</button>
+            <p class="testp" id="testp">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
             </p>
         </section>
@@ -34,13 +43,17 @@
             <h1>Page #2</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
               </p>
-            <ul class="imgs">
+            <ul class="img-1">
             <img class="bild" src="css/img/cat.png" alt="bild 1">
             <img class="bild2" src="css/img/green.png" alt="bild 2">
+            <img class="bild3" src="css/img/robot.png" alt="bild 3">
             </ul>
         </section>
         <footer>
+            <ul class="footertext">
             <p>The footer</p>
+            <p>text</p>
+        </ul>
         </footer>
     </main>
 
